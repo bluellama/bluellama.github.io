@@ -26,8 +26,13 @@ author:
 version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
+pages_list:
+  About: '/about'
+  Blog: '/blog'
+  Projects: '/projects'
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
+  - kramdown
