@@ -1,10 +1,10 @@
-# Permalinks
+#Permalinks
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Brett Anderson
+tagline:             Applicant
+url:                 http://bluellama.github.io
 paginate:            1
 baseurl:             ""
 
@@ -17,9 +17,10 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Brett Anderson
+  url:               http://bluellama.github.io
+  email:             brett.anderson@gmail.com
+  phone:	     512-775-6896
 
 # Custom vars
 version:             2.0.0
