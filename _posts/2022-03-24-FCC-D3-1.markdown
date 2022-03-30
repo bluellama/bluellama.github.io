@@ -1,0 +1,55 @@
+---
+layout: post 
+title:  "D3 Project 1 - Bar Chart"
+date:   2022-03-16 15:18:15 +0100
+categories: dataviz
+custom-javascript-list:
+    - "/assets/d3-barchart/d3-barchart.js"
+
+custom-css-list:
+     - "/assets/d3-barchart/d3-barchart.css" 
+---
+# Foundational D3 Concepts
+A bar chart is a great first project when learning D3.  It's simple enough to do with minimum code and minimum headaches, but is complex enough to gain experience using several features of D3 that one can also use in more elaborate visualizations later. Those features include:
+- [Axes](https://github.com/d3/d3-axis)
+- [Scales](https://github.com/d3/d3-scale)
+- [Fomatting numbers](https://github.com/d3/d3-format)
+- [Adding data](https://stackoverflow.com/questions/49599691/how-to-load-data-from-a-csv-file-in-d3-v5/49604124#49604124)
+- [Using callback functions](https://www.w3schools.com/js/js_callback.asp)
+- [Making tooltips](https://bl.ocks.org/d3noob/a22c42db65eb00d4e369) using `onmouseover` and `onmouseout` to control the opacity, text, and location of a `<div>`
+- Making overlays for the bars by using `on(mouseover)` and `on(mouseout)` to control the opacity of, size, and location of a `<div>`
+
+# Embedding D3 in Jekyll posts
+The "course" I took from FreeCodeCamp used Codepen to host examples, but I'm not really a fan of their platform.  The editor is very basic, the error messaging leaves something to be desired, and there isn't any opportunity for rich documentation and interactivity like one would have using a Jupyter Notebook for Python or a notebook on Observable for D3.  Also, no version control.  
+
+It's a decent enough sandbox for doing simple things quick, but for more serious and long-lasting projects, I would rather use vim, Github[pages], and Jekyll. In order to embed the visualizations I had made on Codepen in my Jekyll site, I needed to make a few modications to my Jekyll site:
+
+- Override the default head.html file from my theme to include custom css and js files.
+- Declare those js files properly so I can import D3
+- Use the *assets* directory to store my custom css and js
+- Modify the styling from my Codepen project so that it presents nicely in the middle of a page
+
+For this I found a few helpful resources:
+- The [Jekyll docs](https://jekyllrb.com/docs/themes/#:~:text=To%20locate%20a%20theme%27s%20files,%2Fruby%2Fgems%2F2.6.) show how to override the semi-hidden template files in a theme
+- Dmitry Rogozhny demonstrates [adding jss and css to a single Jekyll post](https://dmitryrogozhny.com/blog/how-to-add-custom-script-to-single-post-in-jekyll)
+- Jennifer Reel has a [similar method](https://jreel.github.io/per-page-custom-css-in-jekyll/)
+
+# The Finished Product
+
+  <div class="main">
+  <div id="title">United States Gross Domestic Product<br>1947-2015</div>
+  <div class="visualization"></div>
+  </div>
+
+# Post Project Thoughts
+As I worked on this project, I had only read about everything I used briefly once before, so I was concentrating more on *getting everything to work* than *making it beautiful*.  I looked at an example project, and tried to rewrite every step after honestly feeling like I understood it.  I didn't necessarily have a good overview of how everything worked together until the end.
+
+I think it's important to revisit past projects to see how you'd do it differently now.  Maybe it reminds you about some brilliant idea you had in the past that you forgot about.  Maybe it was absolute garbage, but it makes you feel good about how far you've come.  Either way you, you can probably get something out of it.
+
+If I were to remake this project, I would concentrate much more on the general archicture first.  A pencil and paper drawing would be a great way to start.  Where do all the `<div>`s go>? What kind of SVG shapes am I going to be working with?  Where do my scales begin and end, and what kind of scales are they?  What does my tooltip look like and where does it go in relation to the mouse?
+
+A helpful technique I learned after completing this project was using a D3 hierarchy to create a parent-child diagram of the HTML and SVG elements that make up the visualization.  For the bar chart above, that parent child-diagram looks like:
+
+![family tree](/assets/d3-barchart/family-tree.svg)
+
+In retrospect, the axes title elements probably should have attached to the `<g>` elements along with the axes themselves, but that's not such a big deal.  This diagram is also built from a hand-written JSON representation of the chart above.  In the future, I'd like to generate such diagrams from the D3 elements themselves.  This will provide a better understanding of what D3 is doing under the hood.
