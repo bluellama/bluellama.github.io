@@ -1,0 +1,23 @@
+---
+layout: post 
+title:  "D3 Project 2 - Scatterplot"
+date:   2022-03-16 15:18:15 +0100
+categories: dataviz
+custom-javascript-list:
+    - "/assets/d3-scatterplot/d3-scatterplot.js"
+
+custom-css-list:
+     - "/assets/d3-scatterplot/d3-scatterplot.css" 
+---
+# New D3 Concepts
+This scatterplot is not so different from the bar chart I previous made in terms of the D3 features that I used. New topics include:
+- [Time formatting](https://github.com/d3/d3-time-format) for the y-axis
+- [Ordinal scales](https://github.com/d3/d3-time-format) for the doping/no doping colors
+- Drawing circles instead of rectangles - I don't think this even deserves a documenation callout
+
+<div id ="title">Doping on L'Alpe d'Huez</div>
+<div class ="subtitle">
+  A comparison of the 35 fastest times up the Tour de France's most iconic climb
+</div>
+  
+<div class="vizcontainer"></div>
