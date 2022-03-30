@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "D3 visualizations"
+date:   2022-03-16 15:18:15 +0100
+categories: dataviz
+---
+I have been working through the D3 tutorials at [FreeCodeCamp](https://www.freecodecamp.org/learn/data-visualization/)
+
+My first impressions of both the tutorials and the D3 library are mixed.  The appreciate the brevity of the tutorials, but their short nature means they only scratch the surface of most topics.  Most of my recent experience is in SQL and Python, so I needed to relearn a bit of JavaScript and CSS in order to complete some of the lessons.  The entire course - consisting of 39 lessons and 5 projects - advertises itself as requiring 300 hours to complete. If someone were starting with absolutely no experience in HTML, CSS, or JavaScript, maybe I would agree. I completed the 39 lessons in an afternoon and the first project in about a day, so after 12 hours I would guess I'm about 33.33337% through the course.  Overall I would estimate that it's more like a 50 hour course instead of a 300 hour one.  I think it does do a good job of introducing the basics, though, and I feel like it will give me a good base to explore further on my own.
+
+I like that the D3 library has a functional style to it - instead of needing to loop through arrays of data to operate on them, you can apply functions to the arrays themselves.  The chained method sytnax was confusing at first, but I think that I'll be able to get used to it pretty quickly. The amount of time it takes me to create simple charts is orders of magnitudes higher than using something Google Data Studio right now - but the beauty of D3 is that it allows creating types of graphics that would be impossible in GDS or a similar program.  I can't really complain too much about how long it takes me to do something when I'm just learning.  I'm sure a seasoned D3 developer could whip up a beautiful bar chart in a matter of minutes as well. 
