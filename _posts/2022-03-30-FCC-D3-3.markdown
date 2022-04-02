@@ -1,0 +1,24 @@
+---
+layout: post 
+title:  "D3 Project 3 - Heatmap"
+date:   2022-03-16 15:18:15 +0100
+categories: dataviz
+custom-javascript-list:
+    - "https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"
+    - "/assets/d3-heatmap/d3-heatmap.js"
+
+custom-css-list:
+     - "/assets/d3-heatmap/d3-heatmap.css" 
+---
+I don't have any information about the data source on this one, so the data quality is perhaps dubious.  How were the measurements taken? How good is the data from the early years? What's the source?  Maybe not the most useful from a purely scientific standpoint, but the visual effect is pretty cool.
+
+With such a wide timescale, horizontal scrolling becomes necessary as the individual cell sizes increase.  Maybe a radial/polar type arrangement could be more compact?
+
+New concepts to me were:
+- [Threshold scales](https://observablehq.com/@d3/quantile-quantize-and-threshold-scales)
+- [Band scales](https://observablehq.com/@d3/d3-scaleband)
+- Date formatting
+  - `.setUTCFullYear()`
+  - `.setUTCFullMonth()`
+  - Not entirely new, but more practice with [d3.timeFormat](https://github.com/d3/d3-time-format)
+<div class="viz"></div>
