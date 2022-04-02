@@ -1,0 +1,18 @@
+#title {
+  font-family: monospace;
+  font-size: 2em;
+}
+
+#description {
+  font-family: monospace;
+  font-size: 1em;
+}
+.tooltip {
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  position: absolute;
+  padding: 5px;
+  border-radius: 3px;
+}
+

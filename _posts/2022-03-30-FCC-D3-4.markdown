@@ -1,0 +1,16 @@
+---
+layout: post 
+title:  "D3 Project 4 - Chloropleth Map"
+date:   2022-03-30 15:18:15 +0100
+categories: dataviz
+custom-javascript-list:
+    - "https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"
+    - "https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"
+    - "/assets/d3-chloropleth/d3-chloropleth.js"
+
+custom-css-list:
+     - "/assets/d3-chloropleth/d3-chloropleth.css" 
+---
+<div id="title">Education Attainment in the US</div>
+<div id="description">Percent of Adults Age 25% with a Bachelor's Degree or Higher</div>
+<div id="viz"></div>
