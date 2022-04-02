@@ -1,4 +1,3 @@
-import * as d3 from "https://cdn.skypack.dev/d3@7.3.0";
 
 const canvaswidth = 800;
 const canvasheight = 400;
@@ -27,12 +26,14 @@ attr("height", canvasheight + ypadding + toppadding);
 
 
 
+console.log("what!?");
 d3.json(
 'https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json').
 
 then(data => {
 
 
+console.log("huh!?");
   var unpackedvalues = data.data.map(d => d[1]);
 
 

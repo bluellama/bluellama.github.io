@@ -1,9 +1,12 @@
 ---
 layout: post 
 title:  "D3 Project 1 - Bar Chart"
-date:   2022-03-16 15:18:15 +0100
+date:   2022-03-24 15:18:15 +0100
 categories: dataviz
 custom-javascript-list:
+    - "https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"
+
+custom-javascript-modules-list:
     - "/assets/d3-barchart/d3-barchart.js"
 
 custom-css-list:

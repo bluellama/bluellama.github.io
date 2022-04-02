@@ -9,6 +9,10 @@
     <script src="{{ javascript }}"></script>
 {% endfor %}
 
+{% for javascript in page.custom-javascript-modules-list %}
+    <script src="{{ javascript }}" type="module"></script>
+{% endfor %}
+
 {% for css in page.custom-css-list %}
     <link href="{{ css }}" rel="stylesheet">
 {% endfor %}
